@@ -9,6 +9,8 @@ namespace Bangazon
     {
         public static void Main(string[] args)
         {
+            //run this"dotnet run "Steve Brownlee" Bicycle Shoes Trashcan paypal"
+            
             // Create a customer and grab first/last name from first argument
             Customer firstCustomer = new Customer();
             firstCustomer.firstName = args[0].Split(new Char[] { ' ' })[0];

@@ -20,13 +20,11 @@ namespace Bangazon.Orders
         return _orderNumber;
       }
     }
-    public void addProduct(string product)
-    {
+    public void addProduct(string product) {
       _products.Add(product);
     }
 
-    public string listProducts()
-    {
+    public string listProducts() {
       string output = "";
 
       foreach (string product in _products)
@@ -36,5 +34,14 @@ namespace Bangazon.Orders
 
       return output;
     }
-  }
+
+        public bool removeProduct(string product)
+        {
+           return _products.Remove(product);
+        }
+         public void removeProduct()
+        {
+            _products.Clear();
+        }
+    }
 }
