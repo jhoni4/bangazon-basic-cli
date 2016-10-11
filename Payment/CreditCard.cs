@@ -2,7 +2,7 @@ using Bangazon.Orders;
 
 namespace Bangazon.Payments
 {
-  class CreditCard: Payment 
+  public class CreditCard: Payment 
   {
 
     public string bankName { get; set; }

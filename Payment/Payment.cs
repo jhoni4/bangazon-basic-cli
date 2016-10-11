@@ -3,7 +3,8 @@ using Bangazon.Orders;
 
 namespace Bangazon.Payments
 {
-  class Payment  {
+
+  public class Payment {
     public double amount { get; set; }
 
     private Order _order = null;
